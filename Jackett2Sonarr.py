@@ -72,7 +72,7 @@ def main():
             sql2 = "SELECT * FROM Indexers WHERE Name='"+index_name+"';"
             all_line = check_names(path_sonarr,sql2)
             if not all_line :
-                sql_insert = (index_name,'Newznab','''{"baseUrl": "'''+url_jackett+'''/api/v2.0/indexers/'''+index_name+'''/results/torznab/","apiPath": "/api","apiKey": "'''+api_key+'''","categories": [],"animeCategories": [],"animeStandardFormatSearch": true}''','NewznabSettings',1,1,1,25,'[]',0)            
+                sql_insert = (index_name,'Torznab','''{"baseUrl": "'''+url_jackett+'''/api/v2.0/indexers/'''+index_name+'''/results/torznab/","apiPath": "/api","apiKey": "'''+api_key+'''","categories": [],"animeCategories": [],"animeStandardFormatSearch": true}''','NewznabSettings',1,1,1,25,'[]',0)            
                 insert_datas(path_sonarr,sql_insert)
             else:
                 sql_update=('''Update Indexers set Name = "'''+index_name+'''", Settings = '{"baseUrl": "'''+url_jackett+'''/api/v2.0/indexers/'''+index_name+'''/results/torznab/","apiPath": "/api","apiKey": "'''+api_key+'''","categories": [],"animeCategories": [],"animeStandardFormatSearch": true}'  where Name = "'''+index_name+'''";''')
@@ -85,7 +85,7 @@ def main():
         sql2 = "SELECT * FROM Indexers WHERE Name='"+index_name+"';"
         all_line = check_names(path_sonarr,sql2)
         if not all_line :
-            sql_insert = (index_name,'Newznab','''{"baseUrl": "'''+url_jackett+'''/api/v2.0/indexers/'''+index_name+'''/results/torznab/","apiPath": "/api","apiKey": "'''+api_key+'''","categories": [],"animeCategories": [],"animeStandardFormatSearch": true}''','NewznabSettings',1,1,1,25,'[]',0)            
+            sql_insert = (index_name,'Torznab','''{"baseUrl": "'''+url_jackett+'''/api/v2.0/indexers/'''+index_name+'''/results/torznab/","apiPath": "/api","apiKey": "'''+api_key+'''","categories": [],"animeCategories": [],"animeStandardFormatSearch": true}''','NewznabSettings',1,1,1,25,'[]',0)            
             #print(sql_insert)
             insert_datas(path_sonarr,sql_insert)
         else:
