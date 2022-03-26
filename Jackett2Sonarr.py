@@ -43,7 +43,7 @@ def main():
     av_files = []
     user_indexers = []  
     path_sonarr = input('Sonnar.db path ? :') or '/data/Dockers/Sonarr/sonarr.db'
-    path_jackett = input('Jackett configuration path ? :') or '/data/Dockers/Sonarr/Jackett/Jackett/'
+    path_jackett = input('Jackett configuration path ? :') or '/data/Dockers/Jackett/Jackett'
     path_indexers = join(path_jackett,'Indexers')
     choice_all = input('Do you want to import all Indexers ? (y/n)') or 'n'
 
