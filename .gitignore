@@ -1,0 +1,4 @@
+### Ignore Test Directory & Files like DB
+*.db*
+Jackett/
+
