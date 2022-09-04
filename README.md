@@ -50,4 +50,5 @@ At First, you have to configure all the Indexers in your Jackett UI with all the
 
 [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/)
 
-## THANKS
+## THANKS / AUTHORS
+ [@Nhaakq] (https://www.github.com/Nhaakq)
